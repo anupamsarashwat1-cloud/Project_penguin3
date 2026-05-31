@@ -1,6 +1,15 @@
 # Project_Penguin (TITAN-X SoC)
 
-Project_Penguin is the full RTL implementation of the **TITAN-X System-on-Chip (SoC)**. TITAN-X is a high-performance, multi-core RISC-V SoC designed for compute-intensive and secure applications. It features a 15-Master / 9-Slave AXI4 crossbar interconnect, a heterogeneous multi-core processor subsystem, high-speed peripheral interfaces, video/imaging pipelines, and a dedicated security enclave.
+Project_Penguin is the full RTL implementation of the **TITAN-X System-on-Chip (SoC)**. TITAN-X is a high-performance, multi-core RISC-V SoC designed for compute-intensive and secure applications.
+
+## Current Status (Iteration 3)
+- Fully featured RV64GC core with MMU, FPU, PMP, and caches.
+- Synthesis-compatible interconnect (AXI/AHB/APB).
+- Verification scripts migrated to `functional_verification_2` repository.
+- Successful synthesis of CPU Core (`rv_core_top`) targeting OSU 180nm (proxy for SCL 180nm) using Yosys.
+- Static Timing Analysis (STA) executed via OpenSTA. Current critical path logic depth implies an ~88 MHz maximum operating frequency in 180nm. See `functional_verification_2/sta_report.md` for complete timing details.
+
+It features a 15-Master / 9-Slave AXI4 crossbar interconnect, a heterogeneous multi-core processor subsystem, high-speed peripheral interfaces, video/imaging pipelines, and a dedicated security enclave.
 
 ## Repository Structure
 

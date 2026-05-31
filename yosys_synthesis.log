@@ -1,0 +1,84 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `yosys_synth.tcl' --
+
+1. Executing Verilog-2005 frontend: ./common/cdc_sync.v
+Parsing SystemVerilog input from `./common/cdc_sync.v' to AST representation.
+Generating RTLIL representation for module `\cdc_sync'.
+Warning: Replacing memory \sync_ff with list of registers. See ./common/cdc_sync.v:18
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ./common/fifo_async.v
+Parsing SystemVerilog input from `./common/fifo_async.v' to AST representation.
+Generating RTLIL representation for module `\fifo_async'.
+Warning: Replacing memory \mem with list of registers. See ./common/fifo_async.v:60
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ./common/fifo_sync.v
+Parsing SystemVerilog input from `./common/fifo_sync.v' to AST representation.
+Generating RTLIL representation for module `\fifo_sync'.
+Warning: Replacing memory \mem with list of registers. See ./common/fifo_sync.v:32
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ./common/interfaces.sv
+Parsing SystemVerilog input from `./common/interfaces.sv' to AST representation.
+Generating RTLIL representation for module `\axi4_if'.
+Generating RTLIL representation for module `\axi4_stream_if'.
+Generating RTLIL representation for module `\apb_if'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: ./common/reset_sync.v
+Parsing SystemVerilog input from `./common/reset_sync.v' to AST representation.
+Generating RTLIL representation for module `\reset_sync'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: ./backend/clint.v
+Parsing SystemVerilog input from `./backend/clint.v' to AST representation.
+Generating RTLIL representation for module `\clint'.
+Warning: Replacing memory \mtimecmp with list of registers. See ./backend/clint.v:56
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: ./backend/plic.v
+Parsing SystemVerilog input from `./backend/plic.v' to AST representation.
+Generating RTLIL representation for module `\plic'.
+Warning: Replacing memory \claim with list of registers. See ./backend/plic.v:77
+Warning: Replacing memory \threshold with list of registers. See ./backend/plic.v:76
+Warning: Replacing memory \enable with list of registers. See ./backend/plic.v:75
+Warning: Replacing memory \priority_reg with list of registers. See ./backend/plic.v:73
+Warning: Replacing memory \best_prio with list of registers. See ./backend/plic.v:61, ./backend/plic.v:57
+Warning: Replacing memory \best_src with list of registers. See ./backend/plic.v:66, ./backend/plic.v:56
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: ./backend/rv_core_top.v
+Parsing SystemVerilog input from `./backend/rv_core_top.v' to AST representation.
+Generating RTLIL representation for module `\rv_core_top'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: ./backend/rv_dcache.v
+Parsing SystemVerilog input from `./backend/rv_dcache.v' to AST representation.
+Generating RTLIL representation for module `\rv_dcache'.
+Warning: Replacing memory \plru_state with list of registers. See ./backend/rv_dcache.v:359
+Warning: Replacing memory \tag_sram with list of registers. See ./backend/rv_dcache.v:248
+Warning: Replacing memory \data_sram with list of registers. See ./backend/rv_dcache.v:238

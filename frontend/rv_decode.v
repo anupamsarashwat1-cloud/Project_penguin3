@@ -154,13 +154,62 @@ module rv_decode (
         end
     end
 
-    // Pipeline register
+    wire flush_buf1, flush_buf2, flush_buf3, flush_buf4, flush_buf5;
+    BUFX4 u_buf1 (.A(flush), .Y(flush_buf1)); // for pc_out
+    BUFX4 u_buf2 (.A(flush), .Y(flush_buf2)); // for imm
+    BUFX4 u_buf3 (.A(flush), .Y(flush_buf3)); // for rs1_data
+    BUFX4 u_buf4 (.A(flush), .Y(flush_buf4)); // for rs2_data
+    BUFX4 u_buf5 (.A(flush), .Y(flush_buf5)); // for control bits
+
+    // Pipeline register - Block 1: pc_out
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             pc_out    <= 64'h0;
-            rs1_data  <= 64'h0;
-            rs2_data  <= 64'h0;
+        end else if (flush_buf1) begin
+            pc_out    <= 64'h0;
+        end else if (!stall) begin
+            pc_out    <= pc_in;
+        end
+    end
+
+    // Pipeline register - Block 2: imm
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
             imm       <= 64'h0;
+        end else if (flush_buf2) begin
+            imm       <= 64'h0;
+        end else if (!stall) begin
+            imm       <= imm_comb;
+        end
+    end
+
+    // Pipeline register - Block 3: rs1_data
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            rs1_data  <= 64'h0;
+        end else if (flush_buf3) begin
+            rs1_data  <= 64'h0;
+        end else if (!stall) begin
+            rs1_data  <= (r_rs1 == 5'h0) ? 64'h0 :
+                         (wb_we && wb_rd == r_rs1) ? wb_data : regfile[r_rs1];
+        end
+    end
+
+    // Pipeline register - Block 4: rs2_data
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            rs2_data  <= 64'h0;
+        end else if (flush_buf4) begin
+            rs2_data  <= 64'h0;
+        end else if (!stall) begin
+            rs2_data  <= (r_rs2 == 5'h0) ? 64'h0 :
+                         (wb_we && wb_rd == r_rs2) ? wb_data : regfile[r_rs2];
+        end
+    end
+
+    // Pipeline register - Block 5: control signals
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
             rd        <= 5'h0;
             rs1_addr  <= 5'h0;
             rs2_addr  <= 5'h0;
@@ -175,11 +224,7 @@ module rv_decode (
             jal       <= 1'b0;
             jalr      <= 1'b0;
             valid_out <= 1'b0;
-        end else if (flush) begin
-            pc_out    <= 64'h0;
-            rs1_data  <= 64'h0;
-            rs2_data  <= 64'h0;
-            imm       <= 64'h0;
+        end else if (flush_buf5) begin
             rd        <= 5'h0;
             rs1_addr  <= 5'h0;
             rs2_addr  <= 5'h0;
@@ -195,13 +240,6 @@ module rv_decode (
             jalr      <= 1'b0;
             valid_out <= 1'b0;
         end else if (!stall) begin
-            pc_out    <= pc_in;
-            // Bypass x0
-            rs1_data  <= (r_rs1 == 5'h0) ? 64'h0 :
-                         (wb_we && wb_rd == r_rs1) ? wb_data : regfile[r_rs1];
-            rs2_data  <= (r_rs2 == 5'h0) ? 64'h0 :
-                         (wb_we && wb_rd == r_rs2) ? wb_data : regfile[r_rs2];
-            imm       <= imm_comb;
             rd        <= r_rd;
             rs1_addr  <= r_rs1;
             rs2_addr  <= r_rs2;

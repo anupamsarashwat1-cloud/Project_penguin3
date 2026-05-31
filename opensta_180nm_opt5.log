@@ -1,0 +1,70 @@
+OpenSTA 2.3.1 4f13a213e1 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 11904, module rv_dcache not found. Creating black box for u_dcache.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 11957, module rv_icache not found. Creating black box for u_icache.
+Warning: titan_x.sdc line 7, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: _2838_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2839_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2838_/CLK (DFFSR)
+   1.08    1.08 v _2838_/Q (DFFSR)
+   1.53    2.61 ^ _1380_/Y (INVX1)
+  -0.04    2.57 v _1402_/Y (NAND3X1)
+   2.68    5.25 ^ _1403_/Y (NOR2X1)
+   4.74    9.99 v _1404_/Y (INVX1)
+   0.47   10.46 ^ _1712_/Y (NOR2X1)
+   0.00   10.46 ^ _2839_/D (DFFSR)
+          10.46   data arrival time
+
+   5.00    5.00   clock clk (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00   clock reconvergence pessimism
+           5.00 ^ _2839_/CLK (DFFSR)
+  -0.23    4.77   library setup time
+           4.77   data required time
+---------------------------------------------------------
+           4.77   data required time
+         -10.46   data arrival time
+---------------------------------------------------------
+          -5.69   slack (VIOLATED)
+
+
+Startpoint: _2899_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2898_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2899_/CLK (DFFSR)
+   0.22    0.22 ^ _2899_/Q (DFFSR)
+   0.00    0.22 ^ _2898_/D (DFFSR)
+           0.22   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _2898_/CLK (DFFSR)
+   0.01    0.01   library hold time
+           0.01   data required time
+---------------------------------------------------------
+           0.01   data required time
+          -0.22   data arrival time
+---------------------------------------------------------
+           0.21   slack (MET)
+
+
+tns -497.29
+wns -5.69

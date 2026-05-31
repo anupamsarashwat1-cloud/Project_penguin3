@@ -1,0 +1,9 @@
+OpenSTA 2.3.1 4f13a213e1 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 11895, module rv_dcache not found. Creating black box for u_dcache.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 11948, module rv_icache not found. Creating black box for u_icache.
+Error: report_fanout.tcl line 5, report_net -min_fanout is not a known keyword or flag.

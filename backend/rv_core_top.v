@@ -87,14 +87,24 @@ module rv_core_top #(
     // -------------------------------------------------------
     // Pipeline control wires
     // -------------------------------------------------------
-    wire        stall, flush_fe, flush_de;
+    wire        stall, flush_fe;
     wire [63:0] branch_target;
     wire        branch_taken;
     wire        exception;
     wire [63:0] exception_target;
 
     assign flush_fe = branch_taken || exception;
-    assign flush_de = branch_taken || exception || stall;
+    
+    wire flush_de_raw = branch_taken || exception || stall;
+
+    // Explicit manual buffering to split the 300+ fanout of the flush signal
+    // This instantiates actual physical cells from the library, ensuring ABC 
+    // cannot merge them during logic synthesis.
+    wire flush_de_1, flush_de_2, flush_de_3, flush_de_4;
+    BUFX4 u_buf_flush1 ( .A(flush_de_raw), .Y(flush_de_1) );
+    BUFX4 u_buf_flush2 ( .A(flush_de_raw), .Y(flush_de_2) );
+    BUFX4 u_buf_flush3 ( .A(flush_de_raw), .Y(flush_de_3) );
+    BUFX4 u_buf_flush4 ( .A(flush_de_raw), .Y(flush_de_4) );
 
     // -------------------------------------------------------
     // BPU
@@ -200,7 +210,8 @@ module rv_core_top #(
     
     rv_decode u_decode (
         .clk       (clk),         .rst_n    (rst_n),
-        .stall     (stall),       .flush    (flush_de),
+        .stall     (stall),       
+        .flush_1   (flush_de_1),  .flush_2  (flush_de_2),  .flush_3  (flush_de_3),
         .pc_in     (fe_pc),       .instr_in (fe_instr),    .valid_in (fe_valid),
         .wb_rd     (5'h0),        .wb_data  (64'h0),       .wb_we    (1'b0), // Wire to WB
         .pc_out    (de_pc),       .rs1_data (de_rs1),      .rs2_data (de_rs2),
@@ -259,7 +270,7 @@ module rv_core_top #(
 
     rv_execute u_execute (
         .clk          (clk),        .rst_n        (rst_n),
-        .stall        (stall),      .flush        (flush_de),
+        .stall        (stall),      .flush        (flush_de_4),
         .pc_in        (de_pc),      .rs1_data     (de_rs1),    .rs2_data    (de_rs2),
         .imm          (de_imm),     .rd_in        (de_rd),
         .rs1_addr     (de_rs1a),    .rs2_addr     (de_rs2a),

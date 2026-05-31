@@ -1,0 +1,106 @@
+OpenSTA 2.3.1 4f13a213e1 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 13848, module rv_dcache not found. Creating black box for u_dcache.
+Warning: /home/anupam-sarashwat/titan_x_netlist.v line 13937, module rv_icache not found. Creating black box for u_icache.
+Warning: titan_x.sdc line 7, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: _3500_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3474_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _3500_/CLK (DFFSR)
+   0.28    0.28 ^ _3500_/Q (DFFSR)
+   0.08    0.36 v _1687_/Y (INVX1)
+   0.10    0.46 ^ _2125_/Y (NOR2X1)
+   0.09    0.55 v _2127_/Y (AOI22X1)
+   1.04    1.59 ^ _2128_/Y (AOI21X1)
+   0.57    2.16 ^ _2132_/Y (OR2X1)
+   0.15    2.31 v _2163_/Y (OAI21X1)
+   0.22    2.52 v _2164_/Y (AND2X1)
+   0.15    2.67 ^ _2165_/Y (NAND2X1)
+   0.11    2.79 v _2166_/Y (AOI21X1)
+   0.18    2.97 v _2167_/Y (AND2X1)
+   0.17    3.14 v _2168_/Y (AND2X1)
+   0.10    3.23 ^ _2169_/Y (NAND2X1)
+   0.12    3.35 v _2171_/Y (AOI21X1)
+   0.12    3.48 ^ _2172_/Y (NAND2X1)
+   0.12    3.60 v _2174_/Y (AOI21X1)
+   0.12    3.72 ^ _2175_/Y (NAND2X1)
+   0.13    3.85 v _2177_/Y (AOI21X1)
+   0.12    3.97 ^ _2178_/Y (NAND2X1)
+   0.12    4.10 v _2180_/Y (AOI21X1)
+   0.12    4.22 ^ _2181_/Y (NAND2X1)
+   0.12    4.34 v _2183_/Y (AOI21X1)
+   0.12    4.46 ^ _2184_/Y (NAND2X1)
+   0.12    4.59 v _2186_/Y (AOI21X1)
+   0.12    4.71 ^ _2187_/Y (NAND2X1)
+   0.13    4.84 v _2189_/Y (AOI21X1)
+   0.12    4.96 ^ _2190_/Y (NAND2X1)
+   0.12    5.08 v _2192_/Y (AOI21X1)
+   0.12    5.21 ^ _2193_/Y (NAND2X1)
+   0.12    5.33 v _2195_/Y (AOI21X1)
+   0.19    5.52 v _2196_/Y (AND2X1)
+   0.17    5.69 v _2197_/Y (AND2X1)
+   0.10    5.78 ^ _2198_/Y (NAND2X1)
+   0.13    5.91 v _2200_/Y (AOI21X1)
+   0.19    6.10 v _2201_/Y (AND2X1)
+   0.20    6.30 v _2203_/Y (AND2X1)
+   0.12    6.42 ^ _2779_/Y (NOR3X1)
+   0.26    6.68 ^ _2781_/Y (OR2X1)
+   0.11    6.79 v _2862_/Y (NOR2X1)
+   0.09    6.88 ^ _2863_/Y (OAI21X1)
+   0.08    6.97 v _2864_/Y (AOI21X1)
+   0.10    7.07 ^ _2865_/Y (OAI21X1)
+   0.00    7.07 ^ _3474_/D (DFFSR)
+           7.07   data arrival time
+
+   7.10    7.10   clock clk (rise edge)
+   0.00    7.10   clock network delay (ideal)
+   0.00    7.10   clock reconvergence pessimism
+           7.10 ^ _3474_/CLK (DFFSR)
+  -0.10    7.00   library setup time
+           7.00   data required time
+---------------------------------------------------------
+           7.00   data required time
+          -7.07   data arrival time
+---------------------------------------------------------
+          -0.07   slack (VIOLATED)
+
+
+Startpoint: _3491_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3490_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _3491_/CLK (DFFSR)
+   0.22    0.22 ^ _3491_/Q (DFFSR)
+   0.00    0.22 ^ _3490_/D (DFFSR)
+           0.22   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _3490_/CLK (DFFSR)
+   0.01    0.01   library hold time
+           0.01   data required time
+---------------------------------------------------------
+           0.01   data required time
+          -0.22   data arrival time
+---------------------------------------------------------
+           0.21   slack (MET)
+
+
+tns -0.29
+wns -0.07

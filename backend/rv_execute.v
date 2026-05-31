@@ -290,38 +290,70 @@ module rv_execute (
     // -------------------------------------------------------
     // Pipeline Register
     // -------------------------------------------------------
+    wire flush_ex_1, flush_ex_2, flush_ex_3, flush_ex_4;
+    BUFX4 u_buf_flush_ex1 ( .A(flush), .Y(flush_ex_1) );
+    BUFX4 u_buf_flush_ex2 ( .A(flush), .Y(flush_ex_2) );
+    BUFX4 u_buf_flush_ex3 ( .A(flush), .Y(flush_ex_3) );
+    BUFX4 u_buf_flush_ex4 ( .A(flush), .Y(flush_ex_4) );
+
+    // Block 1: alu_result
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             alu_result    <= 64'h0;
-            rs2_out       <= 64'h0;
-            rd_out        <= 5'h0;
-            funct3_out    <= 3'h0;
-            opcode_out    <= 7'h0;
-            mem_read_out  <= 1'b0;
-            mem_write_out <= 1'b0;
-            reg_write_out <= 1'b0;
-            is_amo_out    <= 1'b0;
-            amo_funct5_out<= 5'h0;
-            valid_out     <= 1'b0;
-            branch_taken  <= 1'b0;
-            branch_target <= 64'h0;
-        end else if (flush) begin
+        end else if (flush_ex_1) begin
             alu_result    <= 64'h0;
-            rs2_out       <= 64'h0;
-            rd_out        <= 5'h0;
-            funct3_out    <= 3'h0;
-            opcode_out    <= 7'h0;
-            mem_read_out  <= 1'b0;
-            mem_write_out <= 1'b0;
-            reg_write_out <= 1'b0;
-            is_amo_out    <= 1'b0;
-            amo_funct5_out<= 5'h0;
-            valid_out     <= 1'b0;
-            branch_taken  <= 1'b0;
-            branch_target <= 64'h0;
         end else if (!stall && !mul_div_stall) begin
             alu_result    <= final_alu_res;
+        end
+    end
+
+    // Block 2: rs2_out
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            rs2_out       <= 64'h0;
+        end else if (flush_ex_2) begin
+            rs2_out       <= 64'h0;
+        end else if (!stall && !mul_div_stall) begin
             rs2_out       <= src2_reg;
+        end
+    end
+    
+    // Block 3: branch_target
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            branch_target <= 64'h0;
+        end else if (flush_ex_3) begin
+            branch_target <= 64'h0;
+        end else if (!stall && !mul_div_stall) begin
+            branch_target <= branch_tgt;
+        end
+    end
+
+    // Block 4: Control and Branch outputs
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            rd_out        <= 5'h0;
+            funct3_out    <= 3'h0;
+            opcode_out    <= 7'h0;
+            mem_read_out  <= 1'b0;
+            mem_write_out <= 1'b0;
+            reg_write_out <= 1'b0;
+            is_amo_out    <= 1'b0;
+            amo_funct5_out<= 5'h0;
+            valid_out     <= 1'b0;
+            branch_taken  <= 1'b0;
+        end else if (flush_ex_4) begin
+            rd_out        <= 5'h0;
+            funct3_out    <= 3'h0;
+            opcode_out    <= 7'h0;
+            mem_read_out  <= 1'b0;
+            mem_write_out <= 1'b0;
+            reg_write_out <= 1'b0;
+            is_amo_out    <= 1'b0;
+            amo_funct5_out<= 5'h0;
+            valid_out     <= 1'b0;
+            branch_taken  <= 1'b0;
+        end else if (!stall && !mul_div_stall) begin
             rd_out        <= rd_in;
             funct3_out    <= funct3;
             opcode_out    <= opcode;
@@ -332,7 +364,6 @@ module rv_execute (
             amo_funct5_out<= amo_funct5;
             valid_out     <= valid_in;
             branch_taken  <= branch_comb && valid_in;
-            branch_target <= branch_tgt;
         end
     end
 

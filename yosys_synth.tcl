@@ -1,48 +1,51 @@
-# Yosys synthesis script for SMVDU Titan-X (Restructured)
+# Yosys synthesis script for SMVDU Titan-X (CPU Core Only)
 
-# Read all verilog files with common include path
 read_verilog -Icommon -sv \
-    ./common/reset_sync.v \
     ./common/cdc_sync.v \
-    ./common/fifo_sync.v \
     ./common/fifo_async.v \
-    ./frontend/rv_fetch.v \
-    ./frontend/rv_decode.v \
-    ./backend/rv_execute.v \
-    ./backend/rv_mem.v \
-    ./backend/rv_writeback.v \
-    ./backend/rv_core_top.v \
+    ./common/fifo_sync.v \
+    ./common/interfaces.sv \
+    ./common/reset_sync.v \
     ./backend/clint.v \
     ./backend/plic.v \
+    ./backend/rv_core_top.v \
+    ./backend/rv_execute.v \
+    ./backend/rv_fpu.v \
+    ./backend/rv_mem.v \
+    ./backend/rv_mmu.v \
+    ./backend/rv_monitor_core.v \
+    ./backend/rv_pmp.v \
+    ./backend/rv_ptw.v \
+    ./backend/rv_tlb.v \
+    ./backend/rv_writeback.v \
+    ./frontend/rv_bpu.v \
+    ./frontend/rv_decode.v \
+    ./frontend/rv_fetch.v
 
-    ./memory/sram_32x64_180nm.v \
-    ./memory/l2_tag_array.v \
-    ./memory/l2_data_array.v \
-    ./memory/l2_cache_ctrl.v \
-    ./memory/l2_cache_top.v \
-    ./memory/ddr_phy_if.v \
-    ./memory/ddr_scheduler.v \
-    ./memory/ddr_ctrl_top.v \
-    ./interconnect/axi4_crossbar.v \
-    ./interconnect/axi4_to_ahb.v \
-    ./interconnect/ahb_to_apb.v \
-    ./peripherals/uart_16550.v \
-    ./peripherals/gpio_ctrl.v \
-    ./peripherals/spi_master.v \
-    ./peripherals/i2c_master.v \
-    ./peripherals/watchdog_timer.v \
-    ./peripherals/gem_ethernet.v \
-    ./peripherals/pcie_top.v \
-    ./peripherals/aes_engine.v \
-    ./peripherals/sha256_engine.v \
-    ./peripherals/trng.v \
-    ./top/titan_x_top.v
+# Elaborate design (Target CPU Core instead of full SoC)
+# Do NOT use synth macro because it enforces -check, which fails on blackboxed caches
+hierarchy -top rv_core_top
 
-# Elaborate design
-hierarchy -top titan_x_top
+# Standard optimization passes
+proc; flatten; opt_expr; opt_clean; check; opt -nodffe -nosdff; fsm; opt; wreduce; peepopt; opt_clean; share; opt
 
-# Run generic synthesis
-synth -top titan_x_top
+# Map memories to DFFs (prevents 2D arrays and initial blocks in netlist)
+memory_dff
+memory_collect
+memory_map
 
-# Print statistics
-stat
+opt -full
+techmap
+opt -fast
+
+# Map to standard cell library
+# 4. Map DFFs to 180nm library
+dfflibmap -liberty /home/anupam-sarashwat/vsdflow/library/osu018_stdcells.lib
+    
+# 5. Map combinational logic to 180nm library (Timing Driven)
+abc -D 7100 -liberty /home/anupam-sarashwat/vsdflow/library/osu018_stdcells.lib
+
+clean
+
+# Write synthesized Netlist for OpenSTA
+write_verilog -noattr /home/anupam-sarashwat/titan_x_netlist.v

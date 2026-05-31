@@ -51,11 +51,11 @@ module rv_debug #(
     output reg  [7:0]  sb_wstrb,
     output reg         sb_wlast,
     input  wire        sb_bvalid,
-    output reg         sb_bready,
+    output reg         sb_bready
+);
 
     // Program buffer (for complex debug sequences)
-    output reg  [31:0] progbuf [0:PROGBUF_SIZE-1]
-);
+    reg [31:0] progbuf [0:PROGBUF_SIZE-1];
 
     // -------------------------------------------------------
     // JTAG TAP Controller (IEEE 1149.1)
