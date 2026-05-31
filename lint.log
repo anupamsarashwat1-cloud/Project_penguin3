@@ -1,0 +1,5 @@
+============================================
+ SMVDU-TITAN-X SoC RTL Lint Analysis
+ Linter : Verilator
+============================================
+./scripts/verilator_lint.sh: line 18: /home/anupam-sarashwat/SMVDU_TITAN_X_RTL_to_GDS/common/interfaces.sv: Permission denied

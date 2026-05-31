@@ -1,0 +1,395 @@
+./top/cpu_complex_top.v:100: error: port ``hart_active'' is not a port of u_hart0.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/cpu_complex_top.v:116: error: port ``hart_active'' is not a port of u_hart1.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/cpu_complex_top.v:132: error: port ``hart_active'' is not a port of u_hart2.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/cpu_complex_top.v:148: error: port ``hart_active'' is not a port of u_hart3.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/cpu_complex_top.v:164: error: port ``hart_active'' is not a port of u_hart4.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./peripherals/gem_sgmii_pcs.v:91: error: Unable to bind wire/reg/memory `rst_n' in `gem_sgmii_pcs'
+./peripherals/gem_sgmii_pcs.v:91: error: Failed to evaluate event expression 'negedge rst_n'.
+./backend/rv_debug.v:283: error: Could not find variable ``sb_wlast'' in ``rv_debug''
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/titan_x_top.v:164: error: Net m_axi_arvalid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 6 (imem_arvalid) of rv_core_top is connected to m_axi_arvalid[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Unable to bind wire/reg/memory `m_axi_arready[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:164: error: Failed to elaborate port expression.
+./top/titan_x_top.v:164: error: Net m_axi_araddr[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 8 (imem_araddr) of rv_core_top is connected to m_axi_araddr[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arlen[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 9 (imem_arlen) of rv_core_top is connected to m_axi_arlen[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arsize[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 10 (imem_arsize) of rv_core_top is connected to m_axi_arsize[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rvalid[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Net m_axi_rready[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:165: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:165:      : Port 13 (imem_rready) of rv_core_top is connected to m_axi_rready[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rdata[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rlast[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rresp[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 17 (dmem_awvalid) of rv_core_top is connected to m_axi_awvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Unable to bind wire/reg/memory `m_axi_awready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:167: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awaddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 19 (dmem_awaddr) of rv_core_top is connected to m_axi_awaddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 20 (dmem_awlen) of rv_core_top is connected to m_axi_awlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 21 (dmem_awsize) of rv_core_top is connected to m_axi_awsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 23 (dmem_wvalid) of rv_core_top is connected to m_axi_wvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Unable to bind wire/reg/memory `m_axi_wready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:168: error: Failed to elaborate port expression.
+./top/titan_x_top.v:168: error: Net m_axi_wdata[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 25 (dmem_wdata) of rv_core_top is connected to m_axi_wdata[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wstrb[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 26 (dmem_wstrb) of rv_core_top is connected to m_axi_wstrb[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wlast[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 27 (dmem_wlast) of rv_core_top is connected to m_axi_wlast[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:169: error: Net m_axi_bready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:169: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:169:      : Port 29 (dmem_bready) of rv_core_top is connected to m_axi_bready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_arvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 31 (dmem_arvalid) of rv_core_top is connected to m_axi_arvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Unable to bind wire/reg/memory `m_axi_arready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:170: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_araddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 33 (dmem_araddr) of rv_core_top is connected to m_axi_araddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 34 (dmem_arlen) of rv_core_top is connected to m_axi_arlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 35 (dmem_arsize) of rv_core_top is connected to m_axi_arsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Net m_axi_rready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:171: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:171:      : Port 39 (dmem_rready) of rv_core_top is connected to m_axi_rready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rdata[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rlast[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[0]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:173: error: Net m_axi_arid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:174: error: Net m_axi_awid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:175: error: Net m_axi_arid[((i)*('sd2))+('sd1)] is not defined in this context.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/titan_x_top.v:164: error: Net m_axi_arvalid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 6 (imem_arvalid) of rv_core_top is connected to m_axi_arvalid[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Unable to bind wire/reg/memory `m_axi_arready[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:164: error: Failed to elaborate port expression.
+./top/titan_x_top.v:164: error: Net m_axi_araddr[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 8 (imem_araddr) of rv_core_top is connected to m_axi_araddr[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arlen[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 9 (imem_arlen) of rv_core_top is connected to m_axi_arlen[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arsize[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 10 (imem_arsize) of rv_core_top is connected to m_axi_arsize[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rvalid[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Net m_axi_rready[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:165: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:165:      : Port 13 (imem_rready) of rv_core_top is connected to m_axi_rready[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rdata[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rlast[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rresp[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 17 (dmem_awvalid) of rv_core_top is connected to m_axi_awvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Unable to bind wire/reg/memory `m_axi_awready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:167: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awaddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 19 (dmem_awaddr) of rv_core_top is connected to m_axi_awaddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 20 (dmem_awlen) of rv_core_top is connected to m_axi_awlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 21 (dmem_awsize) of rv_core_top is connected to m_axi_awsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 23 (dmem_wvalid) of rv_core_top is connected to m_axi_wvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Unable to bind wire/reg/memory `m_axi_wready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:168: error: Failed to elaborate port expression.
+./top/titan_x_top.v:168: error: Net m_axi_wdata[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 25 (dmem_wdata) of rv_core_top is connected to m_axi_wdata[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wstrb[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 26 (dmem_wstrb) of rv_core_top is connected to m_axi_wstrb[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wlast[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 27 (dmem_wlast) of rv_core_top is connected to m_axi_wlast[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:169: error: Net m_axi_bready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:169: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:169:      : Port 29 (dmem_bready) of rv_core_top is connected to m_axi_bready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_arvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 31 (dmem_arvalid) of rv_core_top is connected to m_axi_arvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Unable to bind wire/reg/memory `m_axi_arready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:170: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_araddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 33 (dmem_araddr) of rv_core_top is connected to m_axi_araddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 34 (dmem_arlen) of rv_core_top is connected to m_axi_arlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 35 (dmem_arsize) of rv_core_top is connected to m_axi_arsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Net m_axi_rready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:171: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:171:      : Port 39 (dmem_rready) of rv_core_top is connected to m_axi_rready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rdata[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rlast[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[1]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:173: error: Net m_axi_arid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:174: error: Net m_axi_awid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:175: error: Net m_axi_arid[((i)*('sd2))+('sd1)] is not defined in this context.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/titan_x_top.v:164: error: Net m_axi_arvalid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 6 (imem_arvalid) of rv_core_top is connected to m_axi_arvalid[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Unable to bind wire/reg/memory `m_axi_arready[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:164: error: Failed to elaborate port expression.
+./top/titan_x_top.v:164: error: Net m_axi_araddr[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 8 (imem_araddr) of rv_core_top is connected to m_axi_araddr[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arlen[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 9 (imem_arlen) of rv_core_top is connected to m_axi_arlen[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arsize[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 10 (imem_arsize) of rv_core_top is connected to m_axi_arsize[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rvalid[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Net m_axi_rready[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:165: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:165:      : Port 13 (imem_rready) of rv_core_top is connected to m_axi_rready[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rdata[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rlast[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rresp[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 17 (dmem_awvalid) of rv_core_top is connected to m_axi_awvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Unable to bind wire/reg/memory `m_axi_awready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:167: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awaddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 19 (dmem_awaddr) of rv_core_top is connected to m_axi_awaddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 20 (dmem_awlen) of rv_core_top is connected to m_axi_awlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 21 (dmem_awsize) of rv_core_top is connected to m_axi_awsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 23 (dmem_wvalid) of rv_core_top is connected to m_axi_wvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Unable to bind wire/reg/memory `m_axi_wready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:168: error: Failed to elaborate port expression.
+./top/titan_x_top.v:168: error: Net m_axi_wdata[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 25 (dmem_wdata) of rv_core_top is connected to m_axi_wdata[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wstrb[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 26 (dmem_wstrb) of rv_core_top is connected to m_axi_wstrb[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wlast[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 27 (dmem_wlast) of rv_core_top is connected to m_axi_wlast[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:169: error: Net m_axi_bready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:169: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:169:      : Port 29 (dmem_bready) of rv_core_top is connected to m_axi_bready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_arvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 31 (dmem_arvalid) of rv_core_top is connected to m_axi_arvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Unable to bind wire/reg/memory `m_axi_arready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:170: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_araddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 33 (dmem_araddr) of rv_core_top is connected to m_axi_araddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 34 (dmem_arlen) of rv_core_top is connected to m_axi_arlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 35 (dmem_arsize) of rv_core_top is connected to m_axi_arsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Net m_axi_rready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:171: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:171:      : Port 39 (dmem_rready) of rv_core_top is connected to m_axi_rready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rdata[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rlast[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[2]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:173: error: Net m_axi_arid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:174: error: Net m_axi_awid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:175: error: Net m_axi_arid[((i)*('sd2))+('sd1)] is not defined in this context.
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./top/titan_x_top.v:164: error: Net m_axi_arvalid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 6 (imem_arvalid) of rv_core_top is connected to m_axi_arvalid[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Unable to bind wire/reg/memory `m_axi_arready[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:164: error: Failed to elaborate port expression.
+./top/titan_x_top.v:164: error: Net m_axi_araddr[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 8 (imem_araddr) of rv_core_top is connected to m_axi_araddr[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arlen[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 9 (imem_arlen) of rv_core_top is connected to m_axi_arlen[(i)*('sd2)]
+./top/titan_x_top.v:164: error: Net m_axi_arsize[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:164: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:164:      : Port 10 (imem_arsize) of rv_core_top is connected to m_axi_arsize[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rvalid[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Net m_axi_rready[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:165: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:165:      : Port 13 (imem_rready) of rv_core_top is connected to m_axi_rready[(i)*('sd2)]
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rdata[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rlast[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:165: error: Unable to bind wire/reg/memory `m_axi_rresp[(i)*('sd2)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:165: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 17 (dmem_awvalid) of rv_core_top is connected to m_axi_awvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Unable to bind wire/reg/memory `m_axi_awready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:167: error: Failed to elaborate port expression.
+./top/titan_x_top.v:167: error: Net m_axi_awaddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 19 (dmem_awaddr) of rv_core_top is connected to m_axi_awaddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 20 (dmem_awlen) of rv_core_top is connected to m_axi_awlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:167: error: Net m_axi_awsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:167: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:167:      : Port 21 (dmem_awsize) of rv_core_top is connected to m_axi_awsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 23 (dmem_wvalid) of rv_core_top is connected to m_axi_wvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Unable to bind wire/reg/memory `m_axi_wready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:168: error: Failed to elaborate port expression.
+./top/titan_x_top.v:168: error: Net m_axi_wdata[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 25 (dmem_wdata) of rv_core_top is connected to m_axi_wdata[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wstrb[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 26 (dmem_wstrb) of rv_core_top is connected to m_axi_wstrb[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:168: error: Net m_axi_wlast[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:168: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:168:      : Port 27 (dmem_wlast) of rv_core_top is connected to m_axi_wlast[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:169: error: Net m_axi_bready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:169: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:169:      : Port 29 (dmem_bready) of rv_core_top is connected to m_axi_bready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:169: error: Unable to bind wire/reg/memory `m_axi_bresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:169: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_arvalid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 31 (dmem_arvalid) of rv_core_top is connected to m_axi_arvalid[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Unable to bind wire/reg/memory `m_axi_arready[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:170: error: Failed to elaborate port expression.
+./top/titan_x_top.v:170: error: Net m_axi_araddr[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 33 (dmem_araddr) of rv_core_top is connected to m_axi_araddr[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arlen[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 34 (dmem_arlen) of rv_core_top is connected to m_axi_arlen[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:170: error: Net m_axi_arsize[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:170: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:170:      : Port 35 (dmem_arsize) of rv_core_top is connected to m_axi_arsize[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rvalid[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Net m_axi_rready[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:171: error: Output port expression must support continuous assignment.
+./top/titan_x_top.v:171:      : Port 39 (dmem_rready) of rv_core_top is connected to m_axi_rready[((i)*('sd2))+('sd1)]
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rdata[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rlast[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:171: error: Unable to bind wire/reg/memory `m_axi_rresp[((i)*('sd2))+('sd1)]' in `tb_titan_x_top.u_dut.gen_app_cores[3]'
+./top/titan_x_top.v:171: error: Failed to elaborate port expression.
+./top/titan_x_top.v:173: error: Net m_axi_arid[(i)*('sd2)] is not defined in this context.
+./top/titan_x_top.v:174: error: Net m_axi_awid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:175: error: Net m_axi_arid[((i)*('sd2))+('sd1)] is not defined in this context.
+./top/titan_x_top.v:181: error: port ``imem_rready'' is not a port of u_monitor_core.
+./backend/rv_monitor_core.v:135: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_monitor_core.v:135:        : Padding 1 high bits of the port.
+./top/titan_x_top.v:201: warning: Port 36 (ddr_ba) of ddr_ctrl_top expects 3 bits, got 2.
+./top/titan_x_top.v:201:        : Padding 1 high bits of the port.
+./top/titan_x_top.v:201: warning: Port 38 (ddr_addr) of ddr_ctrl_top expects 16 bits, got 17.
+./top/titan_x_top.v:201:        : Padding 1 high bits of the expression.
+285 error(s) during elaboration.

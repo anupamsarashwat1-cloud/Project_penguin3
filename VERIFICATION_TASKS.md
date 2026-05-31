@@ -1,0 +1,69 @@
+# Project Penguin (TITAN-X SoC) Verification Tasks
+
+- `[x]` Initialize Verification Directory Structure
+- `[x]` Sign-off Gate 0: Design Quality
+  - `[x]` Configure and run `verible-verilog-lint`
+  - `[x]` Configure and run `verilator --lint-only`
+  - `[x]` Generate `lint_report.html`
+  - `[x]` Perform CDC analysis and generate `cdc_report.html`
+  - `[x]` Perform RDC analysis and generate `rdc_report.html`
+- `[x]` Sign-off Gate 1: Common Infrastructure
+  - `[x]` Verify `cdc_sync.v`
+  - `[x]` Verify `fifo_async.v`
+  - `[x]` Verify `fifo_sync.v`
+  - `[x]` Verify `reset_sync.v`
+- `[x]` Sign-off Gate 2: Frontend Pipeline
+  - `[x]` Verify `rv_fetch.v`
+  - `[x]` Verify `rv_bpu.v`
+  - `[x]` Verify `rv_decode.v`
+  - `[x]` Verify `rv_icache.v`
+- `[x]` Sign-off Gate 3: CPU Backend
+  - `[x]` Verify `rv_execute.v`
+  - `[x]` Verify `rv_mem.v`
+  - `[x]` Verify `rv_writeback.v`
+  - `[x]` Verify `rv_dcache.v`
+  - `[x]` Verify `rv_tlb.v`
+  - `[x]` Verify `rv_ptw.v`
+  - `[x]` Verify `rv_mmu.v`
+  - `[x]` Verify `rv_pmp.v`
+  - `[x]` Verify `rv_fpu.v`
+  - `[x]` Verify `rv_debug.v`
+  - `[x]` Verify `clint.v`
+  - `[x]` Verify `plic.v`
+  - `[x]` Verify `rv_core_top.v`
+  - `[x]` Verify `rv_monitor_core.v`
+- `[x]` Sign-off Gate 4: Interconnect
+  - `[x]` Verify `axi4_crossbar.v`
+  - `[x]` Verify `axi4_to_ahb.v`
+  - `[x]` Verify `ahb_to_apb.v`
+  - `[x]` Verify `apb_bridge.v`
+  - `[x]` Verify `mmu_arbiter.v`
+  - `[x]` Verify `mpu.v`
+  - `[x]` Verify `qos_controller.v`
+- `[x]` Sign-off Gate 5: Memory System
+  - `[x]` Verify L2 Cache components
+  - `[x]` Verify Cache Coherency and False Sharing
+  - `[x]` Run RVWMO Litmus Tests
+  - `[x]` Verify DDR Controller and PHY
+  - `[x]` Verify SRAM models
+- `[x]` Sign-off Gate 6: Security
+  - `[x]` Verify `secure_boot.v`
+  - `[x]` Verify `ecdsa_engine.v`
+  - `[x]` Verify `drbg.v`
+  - `[x]` Verify `envm_ctrl.v`
+- `[x]` Sign-off Gate 7: Crypto Peripherals
+  - `[x]` Verify `aes_engine.v`
+  - `[x]` Verify `sha256_engine.v`
+  - `[x]` Verify `trng.v`
+- `[x]` Sign-off Gate 8: Communication Peripherals
+  - `[x]` Verify UART, I2C, SPI, CAN, Ethernet, PCIe, GPIO, RTC, Watchdog
+- `[x]` Sign-off Gate 9: Storage
+  - `[x]` Verify USB OTG, MMC, QSPI
+- `[x]` Sign-off Gate 10: Video
+  - `[x]` Verify MIPI, ISP, VDMA, HDMI
+- `[x]` Sign-off Gate 11: Full SoC
+  - `[x]` Boot sequence test
+  - `[x]` Multicore stress test (100M+ cycles)
+- `[x]` Assertions & Coverage Verification Matrix complete
+- `[x]` CI Pipeline configured
+- `[x]` Final Sign-off Reports generated

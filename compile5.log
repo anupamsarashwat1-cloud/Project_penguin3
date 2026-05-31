@@ -1,0 +1,4 @@
+./verification/tb_titan_x_top.sv:51: warning: Port 4 (ddr_addr) of titan_x_top expects 16 bits, got 17.
+./verification/tb_titan_x_top.sv:51:        : Padding 1 high bits of the expression.
+./verification/tb_titan_x_top.sv:51: warning: Port 5 (ddr_ba) of titan_x_top expects 3 bits, got 2.
+./verification/tb_titan_x_top.sv:51:        : Padding 1 high bits of the port.

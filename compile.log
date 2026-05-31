@@ -1,0 +1,319 @@
+./top/cpu_complex_top.v:100: error: port ``hart_active'' is not a port of u_hart0.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/cpu_complex_top.v:116: error: port ``hart_active'' is not a port of u_hart1.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/cpu_complex_top.v:132: error: port ``hart_active'' is not a port of u_hart2.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/cpu_complex_top.v:148: error: port ``hart_active'' is not a port of u_hart3.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/cpu_complex_top.v:164: error: port ``hart_active'' is not a port of u_hart4.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./peripherals/gem_sgmii_pcs.v:91: error: Unable to bind wire/reg/memory `rst_n' in `gem_sgmii_pcs'
+./peripherals/gem_sgmii_pcs.v:91: error: Failed to evaluate event expression 'negedge rst_n'.
+./backend/rv_debug.v:283: error: Could not find variable ``sb_wlast'' in ``rv_debug''
+./top/titan_x_top.v:159: error: port ``ext_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``timer_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``sw_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awaddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wstrb'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rresp'' is not a port of u_core.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/titan_x_top.v:159: error: port ``ext_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``timer_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``sw_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awaddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wstrb'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rresp'' is not a port of u_core.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/titan_x_top.v:159: error: port ``ext_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``timer_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``sw_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awaddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wstrb'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rresp'' is not a port of u_core.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/titan_x_top.v:159: error: port ``ext_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``timer_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``sw_irq'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_icache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awaddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_awsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wstrb'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_wlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_bid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arlen'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_arsize'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rresp'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rlast'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_dcache_rid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_arready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_araddr'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rvalid'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rready'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rdata'' is not a port of u_core.
+./top/titan_x_top.v:159: error: port ``m_ptw_rresp'' is not a port of u_core.
+./backend/rv_core_top.v:200: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_core_top.v:200:        : Padding 1 high bits of the expression.
+./backend/rv_pmp.v:79: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:326: error: Can not assign non-array expression `304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000` to array.
+./backend/rv_core_top.v:326:      : Port 11 (pmpaddr) of rv_pmp is connected to 304'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+./backend/rv_core_top.v:335: warning: Port 14 (lr_addr_in) of rv_dcache expects 40 bits, got 64.
+./backend/rv_core_top.v:335:        : Pruning 24 high bits of the expression.
+./top/titan_x_top.v:180: error: port ``ext_irq'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``timer_irq'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``sw_irq'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awvalid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awready'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awaddr'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awlen'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_awsize'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_wvalid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_wready'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_wdata'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_wstrb'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_wlast'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_bvalid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_bready'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_bresp'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_bid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_arvalid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_arready'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_araddr'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_arid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_arlen'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_arsize'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rvalid'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rready'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rdata'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rresp'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rlast'' is not a port of u_monitor_core.
+./top/titan_x_top.v:180: error: port ``m_rid'' is not a port of u_monitor_core.
+./backend/rv_monitor_core.v:110: warning: Port 21 (alu_op) of rv_decode expects 4 bits, got 5.
+./backend/rv_monitor_core.v:110:        : Padding 1 high bits of the expression.
+./memory/l2_cache_top.v:71: warning: Port 38 (tag_index) of l2_cache_ctrl expects 6 bits, got 11.
+./memory/l2_cache_top.v:71:        : Padding 5 high bits of the expression.
+./memory/l2_cache_top.v:71: warning: Port 39 (tag_in) of l2_cache_ctrl expects 28 bits, got 23.
+./memory/l2_cache_top.v:71:        : Padding 5 high bits of the port.
+./memory/l2_cache_top.v:71: warning: Port 40 (tag_out) of l2_cache_ctrl expects 28 bits, got 23.
+./memory/l2_cache_top.v:71:        : Padding 5 high bits of the port.
+./top/titan_x_top.v:198: error: port ``s_arsize'' is not a port of u_ddr_ctrl.
+./top/titan_x_top.v:198: error: port ``ddr_odt'' is not a port of u_ddr_ctrl.
+./top/titan_x_top.v:198: error: port ``ddr_act_n'' is not a port of u_ddr_ctrl.
+./top/titan_x_top.v:198: error: port ``ddr_reset_n'' is not a port of u_ddr_ctrl.
+./memory/ddr_ctrl_top.v:210: error: port ``cmd_bg'' is not a port of u_sched.
+./memory/ddr_ctrl_top.v:210: error: port ``dfi_bg'' is not a port of u_sched.
+./memory/ddr_ctrl_top.v:224: error: port ``dfi_act_n'' is not a port of u_phy.
+./memory/ddr_ctrl_top.v:224: error: port ``dfi_bg'' is not a port of u_phy.
+./memory/ddr_ctrl_top.v:224: error: port ``ddr_bg'' is not a port of u_phy.
+./top/titan_x_top.v:198: warning: Port 36 (ddr_ba) of ddr_ctrl_top expects 3 bits, got 2.
+./top/titan_x_top.v:198:        : Padding 1 high bits of the port.
+./top/titan_x_top.v:198: warning: Port 38 (ddr_addr) of ddr_ctrl_top expects 16 bits, got 17.
+./top/titan_x_top.v:198:        : Padding 1 high bits of the expression.
+252 error(s) during elaboration.

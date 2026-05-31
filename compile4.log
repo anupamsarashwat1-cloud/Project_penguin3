@@ -1,0 +1,18 @@
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_core_top.v:260: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_core_top.v:260:        : Padding 1 high bits of the port.
+./backend/rv_pmp.v:87: warning: returning 'bx for out of bounds array access pmpaddr[-1].
+./backend/rv_monitor_core.v:135: warning: Port 15 (alu_op) of rv_execute expects 5 bits, got 4.
+./backend/rv_monitor_core.v:135:        : Padding 1 high bits of the port.
+./top/titan_x_top.v:196: warning: Port 36 (ddr_ba) of ddr_ctrl_top expects 3 bits, got 2.
+./top/titan_x_top.v:196:        : Padding 1 high bits of the port.
+./top/titan_x_top.v:196: warning: Port 38 (ddr_addr) of ddr_ctrl_top expects 16 bits, got 17.
+./top/titan_x_top.v:196:        : Padding 1 high bits of the expression.
