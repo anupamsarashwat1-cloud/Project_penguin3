@@ -431,9 +431,6 @@ These are the physical pins exposed at the chip boundary.
 Project_Penguin3/
 ├── README.md                    # This file
 ├── rtl_completion_plan.md       # Design specification & milestones
-├── yosys_synth.tcl              # Yosys synthesis script (SCL 180nm)
-├── opensta.tcl                  # OpenSTA timing analysis script
-├── titan_x.sdc                  # SDC constraints (7.2ns / 138.8 MHz)
 ├── run_sim.sh                   # Simulation runner
 │
 ├── top/                         # SoC top-level integration
@@ -556,14 +553,10 @@ Project_Penguin3/
 ```bash
 # Lint the entire RTL
 ./scripts/verilator_lint.sh
-
-# Synthesize for SCL 180nm
-yosys -s yosys_synth.tcl
-
-# Run Static Timing Analysis
-conda activate opensta_env
-sta opensta.tcl
 ```
+
+> **Note:** Synthesis scripts, STA scripts, SDC constraints, and all verification logs are maintained in the companion repository:
+> [functional_verification_2](https://github.com/anupamsarashwat1-cloud/functional_verification_2)
 
 ---
 
